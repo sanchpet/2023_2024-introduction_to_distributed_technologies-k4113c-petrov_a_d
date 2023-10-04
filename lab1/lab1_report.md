@@ -1,4 +1,4 @@
-University: [ITMO University](https://itmo.ru/ru/) 
+ University: [ITMO University](https://itmo.ru/ru/) 
 Faculty: [FICT](https://fict.itmo.ru) 
 Course: [Introduction to distributed technologies](https://github.com/itmo-ict-faculty/introduction-to-distributed-technologies) 
 Year: 2023/2024 
@@ -140,7 +140,7 @@ $ minikube stop
 
 ### Схема организации контейнеров и сервисов
 
-![img3](https://github.com/sanchpet/2023_2024-introduction_to_distributed_technologies-k4113c-petrov_a_d/blob/main/lab1/img/Pasted%20image%20231004160322.png)
+![img3](https://github.com/sanchpet/2023_2024-introduction_to_distributed_technologies-k4113c-petrov_a_d/blob/main/lab1/img/Pasted%20image%2020231004160322.png)
 ### Вопросы к работе
 
 #### 1. Что сейчас произошло и что сделали команды указанные ранее?
