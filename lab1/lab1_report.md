@@ -99,7 +99,7 @@ $ minikube kubectl -- port-forward service/vault-5b56bbdcc8-fdrc4 8200:8200 --na
 На скрине ниже приведён пример доступа к контейнеру через веб-браузер:
 ![[Pasted image 20231004123309.png]]
 #### Поиск токена
-Отправим процесс проброса сервиса в background (`^Z,` `bg`) и проверим логи пода:
+Отправим процесс проброса сервиса в background (`^Z`, `bg`) и проверим логи пода:
 ```bash
 $ kubectl logs vault-5b56bbdcc8-fdrc4 --namespace=lab1
 ```
