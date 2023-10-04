@@ -140,7 +140,7 @@ $ minikube stop
 
 ### Схема организации контейнеров и сервисов
 
-![img3](https://github.com/sanchpet/2023_2024-introduction_to_distributed_technologies-k4113c-petrov_a_d/blob/main/lab1/img/Pasted%20image%20231004155856.png)
+![img3](https://github.com/sanchpet/2023_2024-introduction_to_distributed_technologies-k4113c-petrov_a_d/blob/main/lab1/img/Pasted%20image%2020231004155856.png)
 
 ### Вопросы к работе
 
