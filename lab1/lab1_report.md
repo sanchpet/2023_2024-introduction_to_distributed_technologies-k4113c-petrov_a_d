@@ -1,4 +1,4 @@
- University: [ITMO University](https://itmo.ru/ru/) 
+University: [ITMO University](https://itmo.ru/ru/) 
 Faculty: [FICT](https://fict.itmo.ru) 
 Course: [Introduction to distributed technologies](https://github.com/itmo-ict-faculty/introduction-to-distributed-technologies) 
 Year: 2023/2024 
@@ -6,7 +6,7 @@ Group: K4113c
 Author: Petrov Aleksandr Denisovich 
 Lab: Lab1 
 Date of create: 03.10.2023 
-Date of finished: to be added
+Date of finished: 12.10.2023
 ___
 
 # Отчёт о лабораторной работе №1
