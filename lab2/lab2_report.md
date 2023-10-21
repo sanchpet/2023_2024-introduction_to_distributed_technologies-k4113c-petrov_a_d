@@ -15,7 +15,7 @@ ___
 - [Описание работы](#описание-работы)
 - [Цель работы](#цель-работы)
 - [Ход работы](#ход-работы)
-  * [Старт minkube:](#старт-minikube)
+  * [Старт minikube:](#cтарт-minikube)
   * [Создание и запуск Deployment](#создание-и-запуск-deployment)
   * [Создание сервиса](#создание-сервиса)
   * [Проброс портов и подключение к контейнерам через браузер](#проброс-портов-и-подключение-к-контейнерам-через-браузер)
@@ -30,7 +30,7 @@ ___
 Разработать манифест для запуска Deployment и запустить первый Deployment. Потренироваться в создании сервисов для доступа к Deployment или отдельным его подам. Проверить передачу параметров окружения в контейнер через манифест. 
 ### Ход работы
 
-#### Старт minkube
+#### Старт minikube
 Запустим minikube командой `minkube start`
 ```bash
 ubuntu@ubuntu-2204:~/ITMO/lab2$ minikube start
@@ -164,7 +164,7 @@ ubuntu@ubuntu-2204:~/ITMO/lab2$ kubectl -- port-forward service/itdt-contained-f
 
 Подключимся к контейнерам с браузера:
 
-![[Pasted image 20231021112327.png]]
+![img1](https://github.com/sanchpet/2023_2024-introduction_to_distributed_technologies-k4113c-petrov_a_d/blob/main/lab2/img/Pasted%20image%2020231021112327.png)
 
 #### Проверка поведения контейнеров
 При подключении к контейнерам нас могут интересовать следующие вещи:
@@ -217,11 +217,11 @@ ubuntu@ubuntu-2204:~/ITMO/lab2$ minikube kubectl -- port-forward service/itdt-co
 ```
 
 Однако, даже создав дополнительный сервис для пода `itdt-contained-frontend-deployment-68f45fd5d8-q4z45`, при проверке содержимого в браузере я получаю имя первого контейнера:
-![[Pasted image 20231021123223.png]]
+![img2](https://github.com/sanchpet/2023_2024-introduction_to_distributed_technologies-k4113c-petrov_a_d/blob/main/lab2/img/Pasted%20image%2020231021123223.png)
 
 ### Схема организации контейнеров и сервисов
 
-![[Pasted image 20231021130232.png]]
+![img3](https://github.com/sanchpet/2023_2024-introduction_to_distributed_technologies-k4113c-petrov_a_d/blob/main/lab2/img/Pasted%20image%2020231021130232.png)
 ### Вопросы к работе
 
 1. Меняются ли переменные `REACT_APP_USERNAME`, `REACT_APP_COMPANY_NAME`?
