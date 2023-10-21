@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: itdt-contained-frontend-deployment
+  labels:
+    app: itdt-contained-frontend-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: itdt-contained-frontend-deployment
+  template:
+    metadata:
+      labels:
+        app: itdt-contained-frontend-deployment
+    spec:
+      containers:
+      - name: itdt-contained-frontend-deployment
+        image: ifilyaninitmo/itdt-contained-frontend:master
+        env:
+        - name: REACT_APP_USERNAME
+          value: "SanchPet"
+        - name: REACT_APP_COMPANY_NAME
+          value: "SanchPet Corporation"
+        ports:
+        - containerPort: 3000
