@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: itdt-contained-frontend
+  labels:
+    app: front
+    tier: itdt-contained-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      tier: itdt-contained-frontend
+  template:
+    metadata:
+      labels:
+        tier: itdt-contained-frontend
+    spec:
+      containers:
+      - name: frontend-container
+        image: ifilyaninitmo/itdt-contained-frontend:master
+        ports:
+        - containerPort: 3000
+        env:
+        - name: REACT_APP_USERNAME
+          valueFrom:
+            configMapKeyRef:
+              name: configmap-demo
+              key: user
+        - name: REACT_APP_COMPANY_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: configmap-demo
+              key: company

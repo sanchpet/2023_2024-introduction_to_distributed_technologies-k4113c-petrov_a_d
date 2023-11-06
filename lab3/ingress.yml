@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+  name: virtual-host-ingress
+  namespace: default
+spec:
+  tls:
+    - hosts:
+        - "monsters.inc"
+    - secretName: mkcert
+  rules:
+  - host: monsters.inc
+    http:
+      paths:
+      - backend:
+          service:
+            name: itdt-contained-frontend
+            port:
+              number: 3000
+        path: /
+        pathType: ImplementationSpecific
