@@ -8,7 +8,7 @@ Lab: Lab3
 Date of create: 06.11.2023 
 Date of finished: to be added
 ___
-# Отчёт о лабораторной работе №2
+# Отчёт о лабораторной работе №3
 
 ## Развертывание веб сервиса в Minikube, доступ к веб интерфейсу сервиса. Мониторинг сервиса.
 
@@ -97,7 +97,7 @@ Forwarding from 127.0.0.1:3000 -> 3000
 Forwarding from [::1]:3000 -> 3000
 ```
 Перейдём в браузер и убедимся, что все переменные на месте:
-![[Pasted image 20231106203637.png]]
+![img1](https://github.com/sanchpet/2023_2024-introduction_to_distributed_technologies-k4113c-petrov_a_d/blob/main/lab3/img/Pasted%20image%2020231106203637.png)
 #### Создание Ingress
 Установим плагин Ingress в minikube:
 ```bash
@@ -200,9 +200,14 @@ ff02::2 ip6-allrouters
 ```
 
 Теперь, вбивая в Mozilla наше FQDN, мы попадаем в веб-приложение. Подключение при этом производится по протоколу HTTPS:
-![[Pasted image 20231106220034.png]]
+![img2](https://github.com/sanchpet/2023_2024-introduction_to_distributed_technologies-k4113c-petrov_a_d/blob/main/lab3/img/Pasted%20image%2020231106220034.png)
+
 Убедимся, что выдаётся наш сертификат:
-![[Pasted image 20231106220344.png]]
+
+![img3](https://github.com/sanchpet/2023_2024-introduction_to_distributed_technologies-k4113c-petrov_a_d/blob/main/lab3/img/Pasted%20image%2020231106220344.png)
+
+Таким образом, нам удалось настроить Ingress на работу с созданным нами сервисом, используя FQDN и TLS-сертификат. 
+
 ### Схема организации контейнеров и сервисов
 
 // TO BE ADDED //
