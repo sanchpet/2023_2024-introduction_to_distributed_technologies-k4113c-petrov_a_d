@@ -6,7 +6,7 @@ Group: K4113c
 Author: Petrov Aleksandr Denisovich 
 Lab: Lab2 
 Date of create: 21.10.2023 
-Date of finished: to be added
+Date of finished: 26.10.2023
 ___
 # Отчёт о лабораторной работе №2
 
