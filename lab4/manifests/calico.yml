@@ -1,0 +1,21 @@
+apiVersion: projectcalico.org/v3
+kind: IPPool
+metadata:
+  name: rack-c01-pool
+spec:
+  cidr: 10.244.1.0/24
+  ipipMode: Always
+  natOutgoing: true
+  nodeSelector: rack == "c01"
+
+---
+
+apiVersion: projectcalico.org/v3
+kind: IPPool
+metadata:
+  name: rack-c02-pool
+spec:
+  cidr: 10.244.2.0/24
+  ipipMode: Always
+  natOutgoing: true
+  nodeSelector: rack == "c02"
